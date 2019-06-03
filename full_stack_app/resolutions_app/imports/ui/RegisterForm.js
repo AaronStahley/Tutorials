@@ -10,6 +10,9 @@ export default class RegisterForm extends Component {
         password: this.password.value
       },
       err => {
+        if (!err) {
+          this.props.client.resetStore();
+        }
         console.log(err);
       }
     );
