@@ -6,26 +6,10 @@ import ResolutionResolvers from "../../api/resolutions/resolvers";
 import UsersSchema from "../../api/users/User.graphql";
 import UsersResolvers from "../../api/users/resolvers";
 
-//--
-const testSchema = `
-type Query { 
-    hi: String
-    resolutions: [Resolution]
-    user: User
-}
-`;
+//----
+const typeDefs = [ResolutionsSchema, UsersSchema];
 
-const typeDefs = [testSchema, ResolutionsSchema, UsersSchema];
-
-const testResolver = {
-  Query: {
-    hi() {
-      return "hello aaron";
-    }
-  }
-};
-
-const resolvers = merge(testResolver, ResolutionResolvers, UsersResolvers);
+const resolvers = merge(ResolutionResolvers, UsersResolvers);
 
 const schema = makeExecutableSchema({
   typeDefs,
