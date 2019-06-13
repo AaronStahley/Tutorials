@@ -12,5 +12,9 @@ Similar to the MERN to-do list this tutorial went through graphql in more depth 
 # NodeJS Tutorial
 Simple nodeJS tutorial as a refresher. 
 
+#React Okta
+Single page application that uses Okta for sso into a sudo employee terminal. Uses React to sucure routes until user is authenticated. 
+
+
 
 
