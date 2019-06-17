@@ -15,6 +15,8 @@ Simple nodeJS tutorial as a refresher.
 # React Okta
 Single page application that uses Okta for sso into a sudo employee terminal. Uses React to sucure routes until user is authenticated. 
 
-
+# CoreApiFundamentals
+Simple RESTApi that shows how to use the Asp.net framwork to make CRUD opperations and version a rest api. 
+Tutorial website: https://app.pluralsight.com/player?course=building-api-aspdotnet-core&author=shawn-wildermuth&name=4d2eba16-79d4-4637-9708-6ab803e8b9ad&clip=3
 
 
